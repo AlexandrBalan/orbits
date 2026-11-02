@@ -30,6 +30,11 @@ int main() {
             }
         }
 
+
+        if(bn::keypad::start_pressed()) {
+             orbiters.clear();
+        }
+
         center.update();
         for(Orbiter& orbiter : orbiters) {
             orbiter.update();
